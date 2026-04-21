@@ -1,0 +1,88 @@
+/* Contenedor que ocupa toda la pantalla y centra el contenido */
+.contenedor-padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+ background-color: transparent black;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Caja del formulario con efecto transparente */
+.formulario {
+  background: rgba(255, 255, 255, 0.05); /* Fondo muy sutil */
+  backdrop-filter: blur(15px); /* Desenfoque de fondo estilo cristal */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde claro y elegante */
+  padding: 3rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.formulario h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Estilo de los campos de entrada */
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Evita que el padding ensanche el input */
+}
+
+.input:focus {
+  border-color: #38bdf8; /* Color azul cian al enfocar */
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Botón llamativo */
+.boton {
+  width: 100%;
+  padding: 12px;
+  background: #56fc09;
+  color: #0f172a;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.boton:hover {
+  background: #5cff10;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.boton:active {
+  transform: translateY(0);
+}
+
+.titulo{
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Bubblegum Sans', cursive;
+}

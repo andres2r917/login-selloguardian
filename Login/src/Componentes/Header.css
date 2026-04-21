@@ -1,0 +1,106 @@
+/* Contenedor exterior para dar margen */
+.main-header {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* La barra verde con bordes redondeados */
+.nav-bar {
+  background-color: #09ff42; /* Verde de la imagen */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 15px; /* Bordes redondeados */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Enlaces de la izquierda */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Contenedor de búsqueda central */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-label {
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+  opacity: 0.9;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-wrapper input {
+  background-color: rgba(255, 255, 255, 0.3); /* Blanco semi-transparente */
+  border: none;
+  padding: 8px 35px 8px 15px;
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  width: 200px;
+}
+
+.search-input-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Botones de la derecha */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn {
+background-color: transparent greenyellow;
+  color: #28a745;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn {
+  background-color: white;
+  color: #28a745;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #f0f0f0;
+}
