@@ -15,7 +15,7 @@ const Seccion1 = () => {
       <button type="submit" className='boton'>Ingresar</button>
     </form>
     <div>
-      <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+      <p className='p1' >¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
     </div>
   </div>
 </div>

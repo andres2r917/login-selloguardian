@@ -45,21 +45,21 @@
 }
 
 .input:focus {
-  border-color: #38bdf8; /* Color azul cian al enfocar */
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
+  border-color: #62945600; /* Color azul cian al enfocar */
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 4px rgba(85, 243, 45, 0.171);
 }
 
 .input::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: #fffbfb66;
 }
 
 /* Botón llamativo */
 .boton {
   width: 100%;
   padding: 12px;
-  background: #56fc09;
-  color: #0f172a;
+  background: #09ff42;
+  color: #fdfdfd;
   border: none;
   border-radius: 10px;
   font-weight: 700;
@@ -70,7 +70,7 @@
 }
 
 .boton:hover {
-  background: #5cff10;
+  background: rgb(0, 0, 0);
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -85,4 +85,7 @@
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Bubblegum Sans', cursive;
+}
+.p1{
+  color: #fff;
 }
