@@ -41,11 +41,11 @@
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
-  box-sizing: border-box; /* Evita que el padding ensanche el input */
+  box-sizing: border-box; 
 }
 
 .input:focus {
-  border-color: #62945600; /* Color azul cian al enfocar */
+  border-color: #62945600;
   background: rgba(255, 255, 255, 0);
   box-shadow: 0 0 0 4px rgba(85, 243, 45, 0.171);
 }
@@ -54,11 +54,11 @@
   color: #fffbfb66;
 }
 
-/* Botón llamativo */
+
 .boton {
   width: 100%;
   padding: 12px;
-  background: #09ff42;
+  background-color: #20B355;;
   color: #fdfdfd;
   border: none;
   border-radius: 10px;

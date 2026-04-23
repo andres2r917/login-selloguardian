@@ -1,9 +1,11 @@
 .footer-guardian {
-  background-color: #09ff42;
+  background-color: #20B355;
   color: white;
-  padding: 40px 20px 10px 20px;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 50px;
+  margin-top: 60px;
+  width: 100%;
+  margin 0;
 }
 
 .footer-content {
