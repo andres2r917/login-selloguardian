@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="footer-guardian">
       <div className="footer-content">
         
-        {/* Sección de Contacto e Ubicación */}
+        {/* Sección de Contacto y Ubicación */}
         <div className="footer-section">
           <h3>Contacto</h3>
           <div className="contact-item">
@@ -46,7 +46,7 @@ export const Footer = () => {
 
       </div>
 
-      {/* Barra de Derechos de Autor */}
+      
       <div className="footer-bottom">
         <p>{currentYear} Sello Guardián. Todos los derechos reservados.</p>
         
