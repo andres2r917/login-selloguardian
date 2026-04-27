@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+.sec2 {
+  padding: 5rem 2.5rem;
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* --- Banner --- */
+.sec2__denuncia-banner {
+  background: linear-gradient(135deg, #14532d 0%, #15803d 60%, #22c55e 100%);
+  border-radius: 24px;
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sec2__denuncia-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.sec2__banner-text {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+}
+
+.sec2__banner-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 0.75rem;
+  line-height: 1.15;
+}
+
+.sec2__banner-desc {
+  color: rgba(255,255,255,0.82);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.sec2__banner-btn {
+  background: #fff;
+  color: #15803d;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.sec2__banner-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.sec2__banner-illustration {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.sec2__paw {
+  font-size: 7rem;
+  opacity: 0.25;
+  transform: rotate(20deg);
+  user-select: none;
+}
+
+/* --- Reports --- */
+.sec2__reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.sec2__reports-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #14532d;
+  margin: 0;
+}
+
+.sec2__reports-link {
+  color: #16a34a;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sec2__reports-link:hover {
+  text-decoration: underline;
+}
+
+.sec2__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sec2__report-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sec2__report-card:hover {
+  box-shadow: 0 4px 20px rgba(34,197,94,0.12);
+  transform: translateX(4px);
+}
+
+.sec2__report-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.sec2__report-body {
+  flex: 1;
+}
+
+.sec2__status {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.18rem 0.65rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.sec2__status--green  { background: #dcfce7; color: #16a34a; }
+.sec2__status--yellow { background: #fefce8; color: #ca8a04; }
+.sec2__status--red    { background: #fef2f2; color: #dc2626; }
+
+.sec2__report-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 0.4rem;
+}
+
+.sec2__report-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.sec2__report-btn {
+  background: #dcfce7;
+  color: #15803d;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.18s, transform 0.18s;
+}
+
+.sec2__report-btn:hover {
+  background: #22c55e;
+  color: #fff;
+  transform: scale(1.12);
+}
+
+@media (max-width: 640px) {
+  .sec2 {
+    padding: 3rem 1.25rem;
+  }
+  .sec2__denuncia-banner {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+  .sec2__paw {
+    display: none;
+  }
+}

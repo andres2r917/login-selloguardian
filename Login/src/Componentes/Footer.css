@@ -29,7 +29,7 @@
   font-size: 1.2rem;
 }
 
-/* Estilos de contacto */
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@
   font-size: 1.1rem;
 }
 
-/* Estilos de Redes Sociales */
+
 .social-links {
   display: flex;
   gap: 20px;
@@ -54,7 +54,7 @@
 }
 
 .social-links a:hover {
-  color: #d4edda; /* Un verde más clarito al pasar el mouse */
+  color: #d4edda; 
   transform: translateY(-5px);
 }
 
@@ -68,7 +68,7 @@
   opacity: 0.8;
 }
 
-/* Responsivo para móviles */
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
