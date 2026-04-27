@@ -9,14 +9,14 @@ function App() {
   return (
   
        <div>
-      <Header/>
-      <Navbar/>
+        <Header/>
+        <Navbar/>
       <div>
         <Seccion1/>
         <Seccion2/>
       </div>
         <Footer/>
-       </div>
+      </div>
 
     
   )
